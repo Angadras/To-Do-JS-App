@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+    <script src="./js/main.js" type="module"></script>
+    <title>To-Do App</title>
+</head>
+<body>
+    <main>
+        <section class="new-item-entry">
+            <form id="item-entry-form">
+                <label for="new-item">Entre com uma nova tarefa/item</label>
+                <input id="new-item" type="text" size="40" autocomplete="on" placeholder="Adicione aqui" tabindex="0">
+                <button id="add-item" class="button" title="Adicione uma nova tarefa" aria-label="Confirme novo item" tabindex="0">+</button>
+            </form>
+        </section>
+        <section class="list-container">
+            <div class="list-title">
+                <h1>Tarefas a se fazer:</h1>
+                <button id="clear-items" class="button" title="Limpa a tarefa/item" aria-label="Apaga todas as tarefas" tabindex="0">Limpar</button>
+            </div>
+            <hr />
+            <div id="list-items">
+                <!-- List items will be dynamically added here by JavaScript -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
